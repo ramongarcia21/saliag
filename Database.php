@@ -52,9 +52,8 @@ class Database{
             
             $result=mysqli_query($this->con,$query);
             $row=mysqli_fetch_array($result);
-            
-            $user= isset($row['username']);
-            $pass= isset($row['password']);
+            $user=isset($row['username']);
+            $pass=isset($row['password']);
            
             
             if($username==$user && $password==$pass){
