@@ -1,15 +1,8 @@
 <?php
 
-  include 'Database.php';
-  $db=new Database();
-?>
-
-<?php
-
-  if($_SERVER['REQUEST_METHOD']=="POST"){
-    $getUser=$db->login($_POST);
-  }
-
+  session_start();
+  include 'conexion.php';
+  
 ?>
 
 <!DOCTYPE html>
@@ -46,22 +39,17 @@
         <div class="animate form login_form">
           <section class="login_content">
           
-            <form action="" method="post">
+            <form action="validar.php" method="post">
               <h1>Iniciar sesión</h1>
-                <?php
-                  if(isset($getUser)){
-                    echo $getUser;
-                  }
-                ?>
-              
+                
                 <div>
-                    <input type="text" name="username" type="text" class="form-control" placeholder="Username"/>
+                    <input type="text" name="username" type="text" class="form-control" placeholder="&#128272; Username"/>
                 </div>
                 <div>
-                  <input type="password" name="password" class="form-control" placeholder="Password" />
+                  <input type="password" name="password" class="form-control" placeholder="&#128272; Password" />
                 </div>
                 <div>  
-                  <button  class="btn btn-block btn-secondary submit" type="submit" name="submit">   
+                  <button  class="btn btn-block btn-secondary submit" type="submit" name="btn-login" >   
                     <i class="bi bi-arrow-return-right"> </i>Iniciar sesión   
                   </button>
                 </div>

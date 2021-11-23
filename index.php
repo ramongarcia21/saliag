@@ -1,5 +1,10 @@
 <?php
   session_start();
+  $varsesion = $_SESSION['username'];
+
+  if($varsesion == null || $varsesion == ''){
+    echo "<script> alert('USTED NO TIENE AUTORIZACIÓN'); window.location='login.php'</script>";
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +46,7 @@
               </div>
               <div class="profile_info">
                 <span>Bienvenido,</span>
-                <h2><?php echo $_SERVER['username'];?></h2>
+                <h2><?php echo $_SESSION['username'];?></h2>
               </div>
               <div class="clearfix"></div>
             </div>
@@ -183,7 +188,7 @@
                 <ul class=" navbar-right">
                   <li class="nav-item dropdown open" style="padding-left: 15px;">
                     <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                      <img src="resources/images/img.jpg" alt="">John Doe
+                      <img src="resources/images/img.jpg" alt=""><?php echo $_SESSION['username'];?>
                     </a>
                     <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item"  href="javascript:;"> Profile</a>
@@ -192,7 +197,7 @@
                           <span>Settings</span>
                         </a>
                     <a class="dropdown-item"  href="javascript:;">Help</a>
-                      <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                      <a class="dropdown-item"  href="cerrar_sesion.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                     </div>
                   </li>
   
