@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SALIAG </title>
+    <title>PAYLOAD</title>
 
     <!-- Bootstrap -->
     <link href="resources/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +28,7 @@
     <!-- Custom Theme Style -->
     <link href="resources/build/css/custom.min.css" rel="stylesheet">
     <link href="resources/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
   </head>
 
   <body class="login">
@@ -43,10 +44,10 @@
               <h1>Iniciar sesión</h1>
                 
                 <div>
-                    <input type="text" name="username" type="text" class="form-control" placeholder="&#128272; Username"/>
+                    <input type="text" name="username"  class="form-control" placeholder=" Username"/>
                 </div>
                 <div>
-                  <input type="password" name="password" class="form-control" placeholder="&#128272; Password" />
+                  <input type="password" name="password" class="form-control" placeholder=" Password" />
                 </div>
                 <div>  
                   <button  class="btn btn-block btn-secondary submit" type="submit" name="btn-login" >   
@@ -56,7 +57,7 @@
 
                 <div class="clearfix"></div>
                     
-                    <p>©2021 Todos los derechos reservados para SALIAG</p>
+                    <p>©2021 Todos los derechos reservados para PAYLOAD</p>
                   
                 </div>
               

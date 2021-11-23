@@ -1,5 +1,6 @@
 <?php
   session_start();
+  error_reporting(0);
   $varsesion = $_SESSION['username'];
 
   if($varsesion == null || $varsesion == ''){
@@ -26,6 +27,9 @@
 
     <!-- Custom Theme Style -->
     <link href="resources/build/css/custom.min.css" rel="stylesheet">
+    <link href="resources/icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+
   </head>
 
   <body class="nav-md">
@@ -34,7 +38,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>SALIAG</span></a>
+              <a href="index.php" class="site_title"> <i class="bi bi-truck"></i><span> PAYLOAD</span></a>
             </div>
 
             <div class="clearfix"></div>
