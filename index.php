@@ -2,9 +2,11 @@
   session_start();
   error_reporting(0);
   $varsesion = $_SESSION['username'];
+  $varsesion2 = $_SESSION['password'];
 
-  if($varsesion == null || $varsesion == ''){
+  if($varsesion == null || $varsesion = $username || $varsesion2 == null || $varsesion2 = $password){
     echo "<script> alert('USTED NO TIENE AUTORIZACIÓN'); window.location='login.php'</script>";
+    die();     
   }
 ?>
 <!DOCTYPE html>

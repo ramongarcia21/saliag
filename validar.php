@@ -9,6 +9,7 @@
     $password = $_POST['password'];
 
     $_SESSION['username'] = $username; 
+    $_SESSION['password'] = $password;
     
 
     if(isset($_POST['btn-login'])){
@@ -19,8 +20,8 @@
         if($filas==1){
             echo "<script> alert('Bienvenido $username'); window.location='index.php'</script>";
         }else{
-            echo "Error de autenticacion";
-            //echo "<script> alert('ERROR DE AUTENTICACIÓN'); window.location='login.php'</script>";
+            
+            echo "<script> alert('ERROR DE AUTENTICACIÓN'); window.location='login.php'</script>";
         }
     }
 ?>
