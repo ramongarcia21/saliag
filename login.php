@@ -39,8 +39,9 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-          
+          <img src="resources/images/payload_logo.png" width="350" height="200">
             <form action="validar.php" method="post">
+              
               <h1>Iniciar sesión</h1>
                 
                 <div>
@@ -57,7 +58,7 @@
 
                 <div class="clearfix"></div>
                     
-                    <p>©2021 Todos los derechos reservados para PAYLOAD</p>
+                    <p>PAYLOAD ©2021 </p>
                   
                 </div>
               
